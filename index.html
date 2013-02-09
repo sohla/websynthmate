@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>websynthmate</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<style type="text/css" media="all">
+		body{
+			background-color: gray;
+		}
+		#canvas {
+		    background-color: gray;
+		    margin-top: 0px;
+		}
+	</style>
+
+
+
+
+</head> 
+<body>
+
+
+ 
+<div>
+<!-- Start of first page -->
+<div data-role="page" id="main">
+
+	<div class="ui-grid-c">
+		<div class="ui-block-a"><a href="#scale" data-role="button"  data-mini="true" data-transition="slide">Scale</a></div>
+		<div class="ui-block-b"><a href="#scope" data-role="button"  data-mini="true" data-transition="slide">Scope</a></div>
+		<div class="ui-block-c"><a href="#parameters" data-role="button" data-mini="true" data-transition="slide">Param</a></div>
+<!-- 		<div class="ui-block-d"><a href="#about" data-role="button" data-mini="true" data-transition="slide">About</a></div> -->
+		<div class="ui-block-d"><div data-role="button" data-mini="true" id="onbutton" data-icon="star"><div id="onbuttonlabel">Boot</div></div></div>
+	</div>
+	
+	<canvas id="canvas"></canvas>
+
+
+</div><!-- /page -->
+
+
+<!-- Start of SCALE page -->
+<div data-role="page" id="scale">
+
+	<div data-role="header">
+		<a href="#main" data-icon="back" class="ui-btn-left" data-transition="slide" data-direction="reverse">Back</a>
+		<span class="ui-title" />SCALE
+	</div>
+
+	<div style="padding-left:25px;padding-top:25px;padding-right:25px;">
+		<div data-role="controlgroup" id="scalegroup"></div>
+	</div>
+</div><!-- /page -->
+
+
+
+<!-- Start of SCOPE page -->
+<div data-role="page" id="scope" >
+	<div data-role="header">
+		<a href="#main" data-icon="back" class="ui-btn-left" data-transition="slide" data-direction="reverse">Back</a>
+		<span class="ui-title" />SCOPE
+	</div>
+
+	<div style="padding-left:25px;padding-top:25px;padding-right:25px;">
+		<div>Octave :</div>
+		<div data-role="controlgroup" data-type="horizontal" data-mini="true" id="octavegroup"></div>
+		<div>Range :</div>
+		<div data-role="controlgroup" data-type="horizontal" data-mini="true" id="rangegroup"></div>
+	</div>
+
+</div><!-- /page -->
+
+
+
+
+<!-- Start of PARAMTERsS page -->
+<div data-role="page" id="parameters">
+
+	<div data-role="header">
+		<a href="#main" data-icon="back" class="ui-btn-left" data-transition="slide" data-direction="reverse">Back</a>
+		<span class="ui-title" />PARAMETERS
+	</div>
+
+
+	<div style="padding-left:25px;padding-top:25px;padding-right:25px;">
+
+	<div>Oscilator Type :</div>
+	<div data-role="controlgroup" id="osciltypegroup" ></div>
+</div>
+
+
+
+<!--
+<div><label for="slider-1" >Volume :</label>
+<input class="volumeSlider" type="range" name="volume" id="volume" value="50" min="0" max="100" />
+
+<div><label for="slider-2" >Pan :</label>
+<input class="panSlider" type="range" name="pan" id="pan" value="50" min="0" max="100" />
+-->
+
+
+<!--
+<div>Y Axis Control :</div>
+<div data-role="controlgroup" data-type="horizontal" data-mini="true">
+<a href="#" data-role="button" class="offButton" id="yAxis" value="off">off</a>
+<a href="#" data-role="button" class="volButton" id="yAxis" value="vol">vol</a>
+</div>
+</div>
+-->
+
+
+
+</div><!-- /page -->
+
+
+
+
+<!-- Start of ABOUT page -->
+<div data-role="page" id="about" >
+	<div data-role="header">
+		<a href="#main" data-icon="back" class="ui-btn-left" data-transition="slide" data-direction="reverse">Back</a>
+		<span class="ui-title" />ABOUT
+	</div>
+
+	<div style="padding-left:25px;padding-top:25px;padding-right:25px;">
+		<h2>web synthmate</h2>
+		<h4>steph ohara 2013</h4>
+	</div>
+</div><!-- /page -->
+
+</div>
+</body></html>
